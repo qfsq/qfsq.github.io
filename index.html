@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>George Louis | Principal Systems & Medical AI Architect</title>
+  <style>
+    :root {
+      --bg-color: #0d1117;
+      --card-bg: #161b22;
+      --border-color: #30363d;
+      --text-primary: #c9d1d9;
+      --text-heading: #ffffff;
+      --accent-color: #58a6ff;
+      --accent-medical: #3fb950;
+      --accent-badge: #1f6beb;
+      --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-primary);
+      font-family: var(--font-family);
+      line-height: 1.6;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    a { color: var(--accent-color); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    header {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 30px;
+      margin-bottom: 40px;
+    }
+
+    .profile-avatar {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      border: 2px solid var(--accent-color);
+      object-fit: cover;
+      background-color: var(--card-bg);
+    }
+
+    h1 { margin: 0 0 5px 0; color: var(--text-heading); font-size: 2rem; }
+    .subtitle { font-size: 1.1rem; color: #8b949e; margin-bottom: 15px; }
+
+    .nav-links { display: flex; gap: 15px; flex-wrap: wrap; }
+    .nav-links a {
+      background: var(--card-bg);
+      padding: 6px 12px;
+      border-radius: 6px;
+      border: 1px solid var(--border-color);
+      font-size: 0.9rem;
+    }
+
+    section { margin-bottom: 40px; }
+    h2 {
+      color: var(--text-heading);
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 8px;
+      font-size: 1.4rem;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 2px 8px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      border-radius: 12px;
+      background-color: rgba(31, 107, 235, 0.2);
+      color: var(--accent-color);
+      border: 1px solid var(--accent-color);
+      margin-right: 5px;
+    }
+
+    .badge-med {
+      background-color: rgba(63, 185, 80, 0.15);
+      color: var(--accent-medical);
+      border-color: var(--accent-medical);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 20px;
+    }
+
+    .card h3 { margin-top: 0; color: var(--text-heading); }
+    .card ul { padding-left: 20px; margin-bottom: 0; }
+
+    .arch-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .arch-tag {
+      background: #21262d;
+      border: 1px solid #363b42;
+      padding: 4px 8px;
+      font-size: 0.8rem;
+      border-radius: 4px;
+      color: #8b949e;
+    }
+
+    footer {
+      border-top: 1px solid var(--border-color);
+      padding-top: 20px;
+      text-align: center;
+      color: #8b949e;
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="profile-avatar" style="display:flex;align-items:center;justify-content:center;font-weight:bold;color:var(--accent-color)">
+      [YOUR PHOTO]
+    </div>
+    <div>
+      <h1>Jane Doe</h1>
+      <div class="subtitle">Principal Software & Data Architect | HealthAI & Systems</div>
+      <p style="margin: 0 0 15px 0;">
+        Architecting mission-critical medical data platforms, HIPAA-compliant LLM/RAG pipelines, and high-throughput real-time databases for clinical decision support.
+      </p>
+      <div class="nav-links">
+        <a href="mailto:jane.doe@example.com">Email</a>
+        <a href="https://github.com" target="_blank">GitHub</a>
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        <a href="https://scholar.google.com" target="_blank">Google Scholar</a>
+        <a href="CV.pdf" target="_blank">Download CV (PDF)</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT / FOCUS -->
+  <section id="about">
+    <h2>Architecture Specialization</h2>
+    <p>
+      Over 12+ years of experience engineering resilient software architectures at the intersection of 
+      <strong>Distributed Databases</strong>, <strong>Medical Informatics</strong>, and <strong>Enterprise AI</strong>.
+    </p>
+    <div class="grid">
+      <div class="card">
+        <h3>Medical Databases & Standards</h3>
+        <p>Designing zero-trust, BAA-ready clinical data warehouses. Extensive experience in HL7 v2/v3, <strong>FHIR (HL7)</strong> APIs, OMOP Common Data Model (CDM), and DICOM imaging pipelines.</p>
+      </div>
+      <div class="card">
+        <h3>AI & Clinical Decision Support</h3>
+        <p>Architecting multi-modal RAG systems, medical entity extraction (NER), HIPAA-compliant LLM inference engines, and real-time sepsis/deterioration alerting models.</p>
+      </div>
+      <div class="card">
+        <h3>High-Availability Data Engines</h3>
+        <p>Building hybrid OLTP/OLAP architectures using PostgreSQL, pgvector, Apache Kafka, Distributed Caching, and CXL-memory acceleration for low-latency clinical queries.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- RECENT ARCHITECTURAL PROJECTS -->
+  <section id="projects">
+    <h2>Featured Systems & Projects</h2>
+
+    <div class="card" style="margin-bottom: 20px;">
+      <span class="badge badge-med">Medical Data Core</span>
+      <span class="badge">Distributed Systems</span>
+      <h3 style="margin-top: 10px;">FHIR-Native Lakehouse & Real-time AI Pipeline</h3>
+      <p>
+        Architected an enterprise clinical lakehouse for a multi-hospital network processing 50M+ patient records per day.
+      </p>
+      <ul>
+        <li>Converted raw EHR HL7 feeds into OMOP CDM & FHIR stores using Apache Spark and Rust microservices.</li>
+        <li>Implemented cell-level encryption (KMS) and audit trailing to satisfy strict HIPAA/HITECH regulations.</li>
+        <li>Integrated pgvector and Qdrant to power clinical Semantic Search across 100M+ anonymized doctor notes.</li>
+      </ul>
+      <div class="arch-stack">
+        <span class="arch-tag">PostgreSQL</span>
+        <span class="arch-tag">FHIR / OMOP</span>
+        <span class="arch-tag">Apache Kafka</span>
+        <span class="arch-tag">pgvector</span>
+        <span class="arch-tag">Python / Rust</span>
+        <span class="arch-tag">AWS HealthLake</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <span class="badge">GenAI / LLM</span>
+      <span class="badge badge-med">Clinical Decision Support</span>
+      <h3 style="margin-top: 10px;">On-Premises Medical RAG System for Diagnostic Assistance</h3>
+      <p>
+        Built a zero-data-leakage LLM architecture for hospital intensive care units (ICU).
+      </p>
+      <ul>
+        <li>Deployed quantized Llama-3 / Qwen models on air-gapped GPU clusters for instant chart summarization.</li>
+        <li>Designed context-protocol middleware linking natural language queries directly to OMOP SQL databases.</li>
+        <li>Reduced hallucination rate by 94% through strict clinical terminology grounding (SNOMED-CT / LOINC).</li>
+      </ul>
+      <div class="arch-stack">
+        <span class="arch-tag">llama.cpp</span>
+        <span class="arch-tag">LangChain / LlamaIndex</span>
+        <span class="arch-tag">Vector DB</span>
+        <span class="arch-tag">SNOMED / LOINC</span>
+        <span class="arch-tag">Docker / Podman</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECHNICAL SKILLS MATRIX -->
+  <section id="skills">
+    <h2>Technical Capabilities</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Databases & Storage</h3>
+        <p>PostgreSQL (pgvector), TimescaleDB, MongoDB, Redis, ClickHouse, Snowflake, CockroachDB.</p>
+      </div>
+      <div class="card">
+        <h3>AI / ML Stack</h3>
+        <p>PyTorch, Hugging Face Transformers, vLLM, DeepSpeed, LangChain, RAG Pipelines, Vector Search.</p>
+      </div>
+      <div class="card">
+        <h3>Medical Standards</h3>
+        <p>HL7 v2/v3, FHIR STU4, DICOM, OMOP CDM, SNOMED-CT, LOINC, ICD-10, HIPAA/HITECH Compliance.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 George Louis • Hosted on GitHub Pages</p>
+  </footer>
+
+</body>
+</html>
